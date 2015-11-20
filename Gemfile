@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+#https://gentle-castle-8192.herokuapp.com/
+#http://git.heroku.com/gentle-castle-8192.git
 #ruby '2.2.3'
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
