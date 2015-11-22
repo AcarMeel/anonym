@@ -10,16 +10,19 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bcrypt', '~> 3.1.10'
+gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'nokogiri', '1.6.6.2'
 
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
-  gem 'debugger'
+  gem 'byebug'
   gem 'web-console', '~> 2.0'
 end
 
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.11'
 end
 
 group :production do
