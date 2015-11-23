@@ -1,0 +1,51 @@
+<div id="podcast_show">
+    <div id="show_banner">
+        <div class="wrapper_skinny">
+            <h1><%= @podcast.title %></h1>
+            <p class="description"><%= @podcast.description %> </p>
+            <% unless @podcast.itunes.blank? %>
+            	<a href="<%= @podcast.itunes %>" class="subscribe_link">itunes</a>
+            <% end %>
+            <% unless @podcast.stitcher.blank? %>
+            	<a href="<%= @podcast.stitcher %>" class="subscribe_link">stitcher</a>
+			<% end %>	
+            <% unless @podcast.podbay.blank? %>
+            	<a href="<%= @podcast.podbay %>" class="subscribe_link">podBay</a>
+			<% end %>
+        </div>
+    </div>
+    <div id="breadcrumb">
+    	<%= link_to podcasts_path do %> 
+            all podcasts
+            <span>/</span>
+            the rocketship podcast
+        <% end %>
+    </div>
+    <div id="episodes">
+        <div class="wrapper_skinny">
+            <ul class="cf">
+                <li class="cf">
+                    <div class="episode_thumbnail">
+                        <a href="#"><img src="assets/img/pieter_levels.jpg" alt="pieter levels"></a>
+                    </div>
+                    <div class="episode_overview">
+                        <h2>
+                               <a href="episodes.html">
+                                   Lorem ipsum dolor sit amet.
+                               </a>
+                           </h2>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsum sit repellat quaerat error quae, suscipit perspiciatis id, voluptatum illo.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- <div class="pagination">
+    <span class="previous_page disabled">Previous</span>
+    <em class="current">1</em>
+    <a href="#">2</a>
+    <a href="#" class="next_page">Next</a>
+</div> -->

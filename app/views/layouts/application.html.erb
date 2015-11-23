@@ -18,12 +18,12 @@
             <nav>
                 <ul>
                     <% unless podcast_signed_in? %>
-                        <li><a href="#">explore</a></li>
+                        <li><%= link_to "Explore", podcasts_path %></li>
                         <li><%= link_to "Sign In", new_podcast_session_path %></li>
                         <li><%= link_to "Create a podcast", new_podcast_registration_path %></li>
                     <% else %>
                         <li><a href="#">dashboard</a></li>
-                        <li><a href="#">explore</a></li>
+                        <li><%= link_to "Explore", podcasts_path %></li>
                         <li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
                     <% end %>
                 </ul>
